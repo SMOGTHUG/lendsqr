@@ -1,0 +1,141 @@
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    
+  }
+
+  .parent-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+
+  .logo-container {
+    width: 10rem;
+    border-bottom: 5rem;
+    padding: 1rem;
+  }
+
+  .logo-container > img {
+    width: 100%;
+
+  }
+
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    margin-top: 5rem;
+  }
+
+  .form-container > * {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .image-container > img {
+    width: 100%;
+  }
+
+  .image-container, .form {
+    padding: 2rem;
+  }
+
+  .form > div > h1 {
+    color: #213F7D;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    
+  }
+
+  .form > div > p {
+    color: #545F7D;
+    margin-bottom: 2rem;
+  }
+
+  .form {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .form > div {
+    flex-basis: 80%;
+  }
+
+
+
+  .username {
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #545F7D;
+    margin-bottom: 1rem;
+  }
+
+  .username > input {
+    border: 2px solid transparent;
+    outline: none;
+    width: 100%;
+  }
+
+  .username:focus-within {
+    border: 1px solid #39CDCC;
+  }
+
+  .password {
+    display: flex;
+    padding: 0.6rem 0.5rem;
+    border: 1px solid #545F7D;
+    margin-bottom: 1rem;
+  }
+
+  .password > input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .password:focus-within {
+    border: 1px solid #39CDCC;
+  }
+
+  .password > span {
+    color: #39CDCC;
+    font-size: 0.8rem;
+    
+  }
+
+  .forget-password {
+    text-decoration: none;
+    color: #39CDCC;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #39CDCC;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  @media screen and (max-width: 563px) {
+    .form-container {
+        display: block;
+        padding-top: 1rem;
+        margin-top: 5rem; 
+      }
+  }
+
